@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 body{
-    font-family: 'Josefin', 'Oxygen','Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', 'Oxygen','Times New Roman', Times, serif;
     margin-left:20px;
     margin-right:20px;
 }
 p{
-    font-family: 'Josefin', 'Oxygen', 'Times New Roman', Times, serif;
+    font-family: 'Oxygen', 'Josefin Sans','Times New Roman', Times, serif;
     text-align: justify;
     text-indent: 45px;
     font-size: 16px;
 }
-h1,h2,h3,h4{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+h1, h2, h3, h4{
+    font-family: 'Josefin Sans', 'Oxygen', 'Times New Roman', Times, serif;
 }
-
+.theme{
+    color: rgb(0, 114, 129);
+    font-family: 'Oxygen', 'Josefin Sans', 'Times New Roman', Times, serif;
+}
 .container{
     width: 90%;
     text-align: center;
@@ -70,7 +72,7 @@ h1,h2,h3,h4{
 }
 
 .dropdown-content{
-    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Oxygen', 'Josefin Sans', 'Times New Roman', Times, serif;
     display: none;
     position: absolute;
     background-color: rgb(0, 77, 87);
@@ -123,7 +125,7 @@ img{
     right: 1em;
 }
 .img-overlay-h{
-    font-family: 'Josefin Sans', 'Times New Roman', Times, serif;
+    font-family: 'Oxygen', 'Josefin Sans', 'Times New Roman', Times, serif;
     letter-spacing: 2px;
     position: relative;
     top: 10%;
