@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic HTML</title>
+        <link rel="stylesheet" type="text/css" href="tutorials.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#" class="logo">CodePoint</a>
+            <div class="dropdown">
+              <button class="dropbtn"> &#9776;</button>
+              <div class="dropdown-content">
+                <a href="#">Tutorials</a>
+                <a href="#">Examples</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+              </div>
+            </div> 
+        </div>
+        <center>
+            <div class="container">
+                <div style="margin-top:80px;">
+                  <h2 class='theme'>HTML Basics</h2>
+                  <center>
+                  <p>Hey there, and welcome to CodePoint's basic HTML tutorial. For those of you that don't know, HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. It's alright if you're not quite sure what that means, because we will be going over that later. First things first. A lot of people have the impression that code is very hard to read. While this may be true for certain programming languages, it is not the case with HTML. HTML consists of <strong>tags</strong>, and just about everything between tags is text - the text that is displayed on your browser. So how does it work? Let's take a look. (Screenshots are taking using Visual Studio Code, but you may use any text editor you would like)</p>
+                  
+                  <h3 class="theme">Tags & Setup Code</h3>
+                  <p>There are two types of tags: paired tags and singular tags. Paired tags have an opening tag and a closing tag, whereas singular tags don't have a closing tag. Opening tags and singular tags consist of an opening angle bracket <strong>&lt;</strong>, some text (usually a letter or two, but sometimes more), and a closing angle bracket <strong>&gt;</strong>, and a closing tag consists of an opening angle bracket <strong>&lt;</strong>, a forward slash <strong>/</strong>, the text from the opening tag, and a closing angle bracket <strong>&gt;</strong>. Let's take a look at some basic tags.</p>
+                  <p>The first tag we're going to look at is a singular tag, the <span class="code">&lt;!DOCTYPE&gt;</span> tag. We always put this tag at the very beginning of an HTML document, to let the browser know that this document is written in HTML. To begin your first HTML document, write <span class="code">&lt;!DOCTYPE html&gt;</span>. Now, we need to tell the browser that our HTML is starting. We do this with the <span class="code">&lt;html&gt;</span> tag. <span class="code">&lt;html&gt;</span> is a paired tag, so we also need to write <span class="code">&lt;/html&gt;</span>. All of our code will go between these two tags. We're almost done with setup. The last thing we need to do is add a <span class="code">&lt;head&gt;</span> paired tag along with <span class="code">&lt;/head&gt;</span>, and a <span class="code">&lt;body&gt;</span> along with a <span class="code">&lt;/body&gt;</span>. Your code should now look like this: </p>
+                  </center>
+                  <div class="code">
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;&lt;/head&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;&lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                  </div>
+                  <p>You'll notice that if you save your document, it defaults to a <span class="code">.txt</span> file. While this is fine, you will have no way of seeing what your website looks like. Instead, while you name your document, make sure it ends in <span class="code">.html</span>. This way, your file will look like the icon of your preferred browser, and when you run it, you will see what your browser looks like. (To edit your file, open your code editor, click <span class="code">File &gt; Open File</span> and select your document. <em> Note: we haven't done anything but setup, so your webpage is going to be blank</em>)</p>
+                  
+                  <h3 class="theme">Adding Basic Content</h3>
+                  <p>So you now have a blank webpage. Pretty boring, right? Let's add some basic text: A heading, and a paragraph. You can put whatever text you like between the tags; the example uses some lorem ipsum dummy text.</p>
+                  <p>To add a heading to your webpage, you can use the <span class="code"> h</span> tags. There are four default <span class="code">h</span> tags: <span class="code">&lt;h1&gt;</span> <span class="code">&lt;h2&gt;</span> <span class="code">&lt;h3&gt;</span> and <span class="code">&lt;h4&gt;</span>. You can take your pick, <span class="code">&lt;h1&gt;</span> has the largest font-size, and <span class="code">&lt;h4&gt;</span>has the smallest. Let's add a header to the webpage, between the  <span class="code"> &lt;body&gt;</span> and  <span class="code"> &lt;/body&gt;</span> tags. <em>(For the purposes of this basic tutorial, just ignore the </em><span class="code"> &lt;head&gt;&lt;/head&gt;</span><em>. We will talk more about that and its uses later. Note that using any </em><span class="code">h</span><em> automatically creates a new line underneath it.)</em></p>
+                  <div class="code">
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;&lt;/head&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading (h1)&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                  </div>
+                  <p>Now let's add a paragraph. Unlike the  <span class="code">h</span> tags, there is only one <span class="code">p</span> tag: <span class="code">&lt;p&gt;</span></p>
+                  <div class="code">
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;&lt;/head&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading (h1)&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                  </div>
+                  <p>Now, save your document and reload. You should see text on your website! (It will be in your browser's default font, and the color will be black. We will learn how to change that later.)</p>
+                  
+                  <h3 class="theme">Basic Formatting with HTML Tags</h3>
+                  <p>Most everything we do to format our webpages is done in CSS, but there are a couple basic things you can do with HTML, like center the text on your page, and add a new line. Let's take a look at some basic ones: </p>
+                  
+                  <h4 class="theme">New Line (Break)</h4>
+                  <p>You may have noticed that adding a new line in your code doesn't do anything. Instead we have to use a singular tag: <span class="code">&lt;br&gt;</span>. To create a new line, you just put a <span class="code">&lt;br&gt;</span> where you want it. (<span class="code">&lt;br&gt;</span> is a singular tag, so you don't need a closing <span class="code">&lt;/br&gt;</span> or anything. Using <span class="code">&lt;p&gt;</span> after a previous <span class="code">&lt;/p&gt;</span> or <span class="code">&lt;/h(1,2,3,4)&gt;</span> automatically creates a new line.)</p>
+
+                  <h4 class="theme">Text Formatting</h4>
+                  <p>While you can use CSS to add italic and bold text to your HTML, you can also use HTML tags! To get italic text, you can use the <span class="code">&lt;em&gt;</span> tag, and for bold text use <span class="code">&lt;strong&gt;</span>. There's also <span class="code">&lt;u&gt;</span> for underline and <span class="code">&lt;del&gt;</span> for strikethrough. (All of these tags are paired tags. You put the text you want formatted between the opening and closing tags.) Here is an example, using the code from above: </p>
+                  <div class="code">
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;&lt;/head&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading (h1)&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;em&gt;This is italicized text&lt;/em&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong&gt;This is bold text&lt;/strong&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;u&gt;This is underlined text&lt;/u&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;del&gt;This is text with strikethrough&lt;/del&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                  </div>
+                  <p>Congratulations. You can now personalize your website with some basic text formatting!</p>
+                
+                </div>
+                
+                
+                <p class="credits" id="lastMod"></p>  
+                </div>
+              </div>
+        </center>
+    </body>
+</html>
