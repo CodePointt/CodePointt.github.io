@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin Sans');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body{
     font-family: 'Josefin Sans', 'Oxygen','Times New Roman', Times, serif;
@@ -10,7 +11,7 @@ p{
     font-family: 'Oxygen', 'Josefin Sans','Times New Roman', Times, serif;
     text-align: justify;
     text-indent: 45px;
-    font-size: 16px;
+    font-size: 14px;
 }
 h1, h2, h3, h4{
     font-family: 'Josefin Sans', 'Oxygen', 'Times New Roman', Times, serif;
@@ -164,7 +165,23 @@ img{
     color: white;
 }
 .container{
-    width: 90%;
+    width: 700px;
     text-align: center;
 }
-/*update*/
+.code{
+    font-family: 'Inconsolata','Courier New', Courier, monospace;
+    font-size:14px;
+    background-color: lightgrey;
+    padding: 2px 4px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 700px){
+    p{
+        font-size: 2.3vw;
+    }
+    .container{
+        width: 90%;
+    }
+}
